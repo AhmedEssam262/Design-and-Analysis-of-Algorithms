@@ -4,6 +4,7 @@
 using namespace std;
 
 //Time complexity : O(n^2)
+//Brute-force solution
 int minumum_subarray(int arr[], int size) {
 	int sum = 0;
 	int max = 0;
@@ -22,6 +23,7 @@ int minumum_subarray(int arr[], int size) {
 
 int main()
 {
-	int arr[3] = {4,-1,5 };
-	cout << su(arr,3) << endl;
+	int arr[16] = { 13,-3,-25,20,-3,-16,-23,18,20,-7,12,-5,-22,15,-4,7 };
+	cout << minumum_subarray(arr,16) << endl;
+	//output = 43
 }
